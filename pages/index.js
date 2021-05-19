@@ -26,7 +26,7 @@ export default function Home() {
                 </span>
                 .
               </h1>
-              <p className="max-w-md text-xl leading-relaxed tracking-wide mb-16">
+              <p className="max-w-md text-xl leading-relaxed tracking-wide mb-16 text-gray-800">
                 Through immersive coding bootcamps, <br /> Davak teaches you the
                 skills and <br /> entrepreneurial mindset you need to thrive,
                 now and in the future.
@@ -84,10 +84,10 @@ export default function Home() {
                 style={{ width: 'auto' }}
               >
                 <div className="px-8 pt-7 ">
-                  <h3 className="text-2xl mb-4 ml-4 font-light tracking-wide">
+                  <h3 className="text-2xl mb-4 ml-4 font-light tracking-wide ">
                     Web development course
                   </h3>
-                  <p className="leading-normal text-lg">
+                  <p className="leading-normal text-lg text-gray-800">
                     From the database to the user interface, learn all the
                     skills of a Software Developer and code your own web
                     applications from scratch.
@@ -103,8 +103,9 @@ export default function Home() {
                     </div>
                     <div className="flex justify-end flex-1">
                       <a
-                        className="px-9 py-3 border font-bold tracking-wide"
+                        className="px-9 py-3 border font-bold tracking-wide rounded"
                         href=""
+                        style={{ color: '#fd1015' }}
                       >
                         Learn more
                       </a>
@@ -113,14 +114,15 @@ export default function Home() {
                   <li className="flex px-8 py-4 border-t-2">
                     <div className="flex-1">
                       <div>
-                        <strong>Full-time (12 weeks)</strong>
+                        <strong>Part-time (24 weeks)</strong>
                       </div>
-                      <small>From Monday to Friday, all day.</small>
+                      <small>Flexible hours, same outcome.</small>
                     </div>
                     <div className="flex justify-end flex-1">
                       <a
-                        className="px-9 py-3 border font-bold tracking-wide"
+                        className="px-9 py-3 border font-bold tracking-wide rounded"
                         href=""
+                        style={{ color: '#fd1015' }}
                       >
                         Learn more
                       </a>
@@ -136,12 +138,11 @@ export default function Home() {
               >
                 <div className="px-8 pt-7 ">
                   <h3 className="text-2xl mb-4 ml-4 font-light tracking-wide">
-                    Web development course
+                    Data science course
                   </h3>
-                  <p className="leading-normal text-lg">
-                    From the database to the user interface, learn all the
-                    skills of a Software Developer and code your own web
-                    applications from scratch.
+                  <p className="leading-normal text-lg text-gray-800">
+                    From Python to advanced Machine Learning models, get all the
+                    skills to join a Data Science team.
                   </p>
                 </div>
                 <ul className="mt-6">
@@ -154,8 +155,9 @@ export default function Home() {
                     </div>
                     <div className="flex justify-end flex-1">
                       <a
-                        className="px-9 py-3 border font-bold tracking-wide"
+                        className="px-9 py-3 border font-bold tracking-wide rounded"
                         href=""
+                        style={{ color: '#fd1015' }}
                       >
                         Learn more
                       </a>
@@ -164,14 +166,15 @@ export default function Home() {
                   <li className="flex px-8 py-4 border-t-2">
                     <div className="flex-1">
                       <div>
-                        <strong>Full-time (12 weeks)</strong>
+                        <strong>Part-time (24 weeks)</strong>
                       </div>
-                      <small>From Monday to Friday, all day.</small>
+                      <small>Flexible hours, same outcome.</small>
                     </div>
                     <div className="flex justify-end flex-1">
                       <a
-                        className="px-9 py-3 border font-bold tracking-wide"
+                        className="px-9 py-3 border font-bold tracking-wide rounded"
                         href=""
+                        style={{ color: '#fd1015' }}
                       >
                         Learn more
                       </a>
@@ -181,6 +184,22 @@ export default function Home() {
               </div>
               {/* end data science */}
             </div>
+            <h1 className="sm:text-5xl text-4xl leading-normal mb-7 mt-12 ">
+              A{' '}
+              <span
+                className=" px-3 bg-red-100 rounded"
+                style={{ color: '#fd1015' }}
+              >
+                life-changing
+              </span>{' '}
+              experience
+            </h1>
+            <p className="text-xl leading-relaxed tracking-wide mb-11 text-gray-800">
+              During our 9-week (full-time) or 24-week (part-time) coding
+              bootcamp, learn the most in-demand skills with motivated students,
+              passionate teachers and a hands-on curriculum teaching you how to
+              build software and solve problems.
+            </p>
           </div>
         </section>
       </Layout>
