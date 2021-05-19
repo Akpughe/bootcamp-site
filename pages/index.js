@@ -15,7 +15,7 @@ export default function Home() {
       <Layout>
         <section className="section_one pt-24 ">
           <div className="flex flex-wrap max-w-5xl m-auto">
-            <div className="flex-1 pr-6">
+            <div className="sm:flex-1 pr-6">
               <h1 className="text-6xl leading-normal mb-7 mt-12 ">
                 Change your life, learn to{' '}
                 <span
@@ -41,7 +41,7 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className="flex-1 ">
+            <div className="sm:flex-1 ">
               <div>
                 <Image
                   className="rounded-md object-cover"
