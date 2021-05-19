@@ -1,9 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Layout from '../components/Layout';
+
 export default function Home() {
-  const photo =
-    'https://dwj199mwkel52.cloudfront.net/assets/core/banners/home-bg-11396371bfee6ea0382d71223cd73460a5247fce33035af60939c9ff4f006f71.jpg';
   return (
     <>
       <Head>
@@ -20,7 +19,7 @@ export default function Home() {
               <h1 className="text-6xl leading-normal mb-7 mt-12 ">
                 Change your life, learn to{' '}
                 <span
-                  className=" px-3 bg-red-200 rounded"
+                  className=" px-3 bg-red-100 rounded"
                   style={{ color: '#fd1015' }}
                 >
                   code
@@ -35,7 +34,7 @@ export default function Home() {
 
               <div className="">
                 <button
-                  className=" py-6 px-10 rounded font-semibold text-white text-lg"
+                  className=" py-6 px-10 rounded font-bold text-white text-lg"
                   style={{ backgroundColor: '#fd1015' }}
                 >
                   Discover our courses
@@ -64,17 +63,123 @@ export default function Home() {
         />
         {/* section 2  */}
         <section className="section_two">
-          <div className="flex max-w-5xl m-auto">
-            <div className="">
-              <h1 className="text-5xl leading-normal mb-7 mt-12 ">
+          <div className="flex flex-col max-w-5xl m-auto">
+            {/*  */}
+            <div className="sm:pr-6 sm:pl-0 pl-8">
+              <h1 className="sm:text-5xl text-4xl leading-normal mb-7 mt-12 ">
                 Discover our{' '}
                 <span
-                  className=" px-3 bg-red-200 rounded"
+                  className=" px-3 bg-red-100 rounded"
                   style={{ color: '#fd1015' }}
                 >
                   bootcamp
                 </span>
               </h1>
+            </div>
+            {/*  */}
+            <div className="my-11 flex sm:flex-row flex-col flex-wrap sm:pr-0 sm:pl-0 pl-8 pr-8 ">
+              {/* wed dev */}
+              <div
+                className="flex-1 bg-white pb-4 h-auto shadow-lg rounded-md mr-8 sm:mb-0 mb-4"
+                style={{ width: 'auto' }}
+              >
+                <div className="px-8 pt-7 ">
+                  <h3 className="text-2xl mb-4 ml-4 font-light tracking-wide">
+                    Web development course
+                  </h3>
+                  <p className="leading-normal text-lg">
+                    From the database to the user interface, learn all the
+                    skills of a Software Developer and code your own web
+                    applications from scratch.
+                  </p>
+                </div>
+                <ul className="mt-6">
+                  <li className="flex px-8 py-4 border-t-2">
+                    <div className="flex-1">
+                      <div>
+                        <strong>Full-time (12 weeks)</strong>
+                      </div>
+                      <small>From Monday to Friday, all day.</small>
+                    </div>
+                    <div className="flex justify-end flex-1">
+                      <a
+                        className="px-9 py-3 border font-bold tracking-wide"
+                        href=""
+                      >
+                        Learn more
+                      </a>
+                    </div>
+                  </li>
+                  <li className="flex px-8 py-4 border-t-2">
+                    <div className="flex-1">
+                      <div>
+                        <strong>Full-time (12 weeks)</strong>
+                      </div>
+                      <small>From Monday to Friday, all day.</small>
+                    </div>
+                    <div className="flex justify-end flex-1">
+                      <a
+                        className="px-9 py-3 border font-bold tracking-wide"
+                        href=""
+                      >
+                        Learn more
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              {/* end web dev */}
+              {/* data science */}
+              <div
+                className="flex-1 bg-white pb-4 h-auto shadow-lg rounded-md mr-4"
+                style={{ width: 'auto' }}
+              >
+                <div className="px-8 pt-7 ">
+                  <h3 className="text-2xl mb-4 ml-4 font-light tracking-wide">
+                    Web development course
+                  </h3>
+                  <p className="leading-normal text-lg">
+                    From the database to the user interface, learn all the
+                    skills of a Software Developer and code your own web
+                    applications from scratch.
+                  </p>
+                </div>
+                <ul className="mt-6">
+                  <li className="flex px-8 py-4 border-t-2">
+                    <div className="flex-1">
+                      <div>
+                        <strong>Full-time (12 weeks)</strong>
+                      </div>
+                      <small>From Monday to Friday, all day.</small>
+                    </div>
+                    <div className="flex justify-end flex-1">
+                      <a
+                        className="px-9 py-3 border font-bold tracking-wide"
+                        href=""
+                      >
+                        Learn more
+                      </a>
+                    </div>
+                  </li>
+                  <li className="flex px-8 py-4 border-t-2">
+                    <div className="flex-1">
+                      <div>
+                        <strong>Full-time (12 weeks)</strong>
+                      </div>
+                      <small>From Monday to Friday, all day.</small>
+                    </div>
+                    <div className="flex justify-end flex-1">
+                      <a
+                        className="px-9 py-3 border font-bold tracking-wide"
+                        href=""
+                      >
+                        Learn more
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              {/* end data science */}
             </div>
           </div>
         </section>

@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <>
       <nav className="flex justify-between max-w-5xl  pt-8 m-auto">
-        <div className="flex">
+        <div className="flex sm:pl-0 pl-6">
           <div className="">
             {/* <h1 className="text-2xl">Bootcamp</h1> */}
             <Image src="/vercel.svg" width={100} height={60} />
@@ -22,10 +22,10 @@ const NavBar = () => {
 
         {/*  */}
         <div className="flex relative pl-6">
-          <ul className="flex relative top-5">
+          <ul className="sm:flex hidden relative top-5">
             <li className="px-5 cursor-pointer">About</li>
           </ul>
-          <button className="relative top-0 border border-transparent shadow-2xl font-bold text-xl text-red-500 px-9">
+          <button className="relative top-0 border border-transparent shadow-2xl font-bold text-xl text-red-500 px-8">
             Apply Now
           </button>
         </div>
