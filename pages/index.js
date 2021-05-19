@@ -15,7 +15,7 @@ export default function Home() {
       <Layout>
         <section className="section_one pt-24 ">
           <div className="flex flex-wrap max-w-5xl m-auto">
-            <div className="flex-1 pr-6 sm:pl-0 pl-8">
+            <div className="flex-1 pr-6">
               <h1 className="text-6xl leading-normal mb-7 mt-12 ">
                 Change your life, learn to{' '}
                 <span
@@ -41,7 +41,7 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className="sm:flex-1 sm:flex hidden">
+            <div className="flex-1 ">
               <div>
                 <Image
                   className="rounded-md object-cover"
@@ -63,8 +63,8 @@ export default function Home() {
         {/* section 2  */}
         <section className="section_two">
           <div className="flex max-w-5xl m-auto">
-            <div className="sm:pl-0 sm:pr-0 pr-8 pl-8">
-              <h1 className="sm:text-5xl text-4xl leading-normal mb-7 mt-12 ">
+            <div className="">
+              <h1 className="text-5xl leading-normal mb-7 mt-12 ">
                 Discover our{' '}
                 <span
                   className=" px-3 bg-red-200 rounded"
