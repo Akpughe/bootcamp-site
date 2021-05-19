@@ -14,8 +14,8 @@ export default function Home() {
 
       <Layout>
         <section className="section_one pt-24 ">
-          <div className="flex max-w-5xl m-auto">
-            <div className="flex-1 pr-6">
+          <div className="flex flex-wrap max-w-5xl m-auto">
+            <div className="flex-1 pr-6 sm:pl-0 pl-8">
               <h1 className="text-6xl leading-normal mb-7 mt-12 ">
                 Change your life, learn to{' '}
                 <span
@@ -32,7 +32,7 @@ export default function Home() {
                 now and in the future.
               </p>
 
-              <div>
+              <div className="">
                 <button
                   className=" py-6 px-10 rounded font-semibold text-white text-lg"
                   style={{ backgroundColor: '#fd1015' }}
@@ -41,7 +41,7 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className="flex-1">
+            <div className="sm:flex-1 sm:flex hidden">
               <div>
                 <Image
                   className="rounded-md object-cover"
@@ -63,15 +63,17 @@ export default function Home() {
         {/* section 2  */}
         <section className="section_two">
           <div className="flex max-w-5xl m-auto">
-            <h1 className="text-5xl leading-normal mb-7 mt-12 ">
-              Discover our{' '}
-              <span
-                className=" px-3 bg-red-200 rounded"
-                style={{ color: '#fd1015' }}
-              >
-                bootcamp
-              </span>
-            </h1>
+            <div className="sm:pl-0 sm:pr-0 pr-8 pl-8">
+              <h1 className="sm:text-5xl text-4xl leading-normal mb-7 mt-12 ">
+                Discover our{' '}
+                <span
+                  className=" px-3 bg-red-200 rounded"
+                  style={{ color: '#fd1015' }}
+                >
+                  bootcamp
+                </span>
+              </h1>
+            </div>
           </div>
         </section>
       </Layout>
