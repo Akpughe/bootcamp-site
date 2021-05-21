@@ -3,6 +3,68 @@ import Image from 'next/image';
 import Layout from '../components/Layout';
 
 export default function Home() {
+  const comp = [
+    {
+      id: '1',
+      photo:
+        'https://res.cloudinary.com/wagon/image/upload/c_fill,h_200,q_auto,w_544/v1598888388/jnfaqx1p55pyaul93lmb.webp',
+    },
+    {
+      id: '2',
+      photo:
+        'https://res.cloudinary.com/wagon/image/upload/c_fill,h_200,q_auto,w_544/v1605194848/ej9nruduelzvr682zi0w.webp',
+    },
+    {
+      id: '3',
+      photo:
+        'https://res.cloudinary.com/wagon/image/upload/c_fill,h_200,q_auto,w_544/v1605194915/haguf4jisszvrxsxfwb9.webp',
+    },
+    {
+      id: '4',
+      photo:
+        'https://res.cloudinary.com/wagon/image/upload/c_fill,h_200,q_auto,w_544/v1605194969/mfizvooh9wzlxg5jskmi.webp',
+    },
+    {
+      id: '5',
+      photo:
+        'https://res.cloudinary.com/wagon/image/upload/c_fill,h_200,q_auto,w_544/v1605194990/fa0auzijomwl1v0awum4.webp',
+    },
+    {
+      id: '6',
+      photo:
+        'https://res.cloudinary.com/wagon/image/upload/c_fill,h_200,q_auto,w_544/v1605194927/h4jefuyo6uge1h6vn3gu.webp',
+    },
+    {
+      id: '7',
+      photo:
+        'https://res.cloudinary.com/wagon/image/upload/c_fill,h_200,q_auto,w_544/v1605194809/wbf95ks9ynmehycter8i.webp',
+    },
+    {
+      id: '8',
+      photo:
+        'https://res.cloudinary.com/wagon/image/upload/c_fill,h_200,q_auto,w_544/v1605194837/gzzlmhazhnowwmlxeqks.webp',
+    },
+    {
+      id: '9',
+      photo:
+        'https://res.cloudinary.com/wagon/image/upload/c_fill,h_200,q_auto,w_544/v1605194858/kuhkdbwf44kiidib72si.webp',
+    },
+    {
+      id: '10',
+      photo:
+        'https://res.cloudinary.com/wagon/image/upload/c_fill,h_200,q_auto,w_544/v1605194956/z1b1xj90j2sgniieszv3.webp',
+    },
+    {
+      id: '11',
+      photo:
+        'https://res.cloudinary.com/wagon/image/upload/c_fill,h_200,q_auto,w_544/v1605194898/z3gggfbkapyfcfd2i1og.webp',
+    },
+    {
+      id: '12',
+      photo:
+        'https://res.cloudinary.com/wagon/image/upload/c_fill,h_200,q_auto,w_544/v1605194877/fovglqzqhxpjoav9zt4d.webp',
+    },
+  ];
   return (
     <>
       <Head>
@@ -184,21 +246,86 @@ export default function Home() {
               </div>
               {/* end data science */}
             </div>
-            <h1 className="sm:text-5xl text-4xl leading-normal mb-7 mt-12 ">
-              A{' '}
+            <div className="sm:pr-6 sm:pl-0 pl-8 pr-8">
+              <h1 className="sm:text-5xl text-4xl leading-normal mb-7 mt-12 ">
+                A{' '}
+                <span
+                  className=" px-3 bg-red-100 rounded"
+                  style={{ color: '#fd1015' }}
+                >
+                  life-changing
+                </span>{' '}
+                experience
+              </h1>
+              <p className="text-xl text-justify leading-relaxed tracking-wide mb-11 text-gray-800">
+                During our 9-week (full-time) or 24-week (part-time) coding
+                bootcamp, learn the most in-demand skills with motivated
+                students, passionate teachers and a hands-on curriculum teaching
+                you how to build software and solve problems.
+              </p>
+            </div>
+          </div>
+        </section>
+        {/* section 3 */}
+        <section>
+          <div className="flex justify-between max-w-5xl m-auto pt-14">
+            {/*  */}
+            <div className="flex flex-col flex-1">
+              <h1 className="text-5xl leading-normal mb-7 mt-12 ">
+                Get{' '}
+                <span
+                  className=" px-3 bg-red-100 rounded"
+                  style={{ color: '#fd1015' }}
+                >
+                  hired
+                </span>{' '}
+                by leading partnered companies
+              </h1>
+              <p className="max-w-md text-lg leading-relaxed tracking-wide mb-16 text-gray-800">
+                Our coding bootcamp enables you to work as software engineers,
+                Product Managers, Growth Hackers or UX/UI Designers in the most
+                successful companies. What do recruiters love about candidates?
+                The ability to solve problems, communicate with a team and
+                always keep a critical eye on their work.
+              </p>
+            </div>
+            <div className="flex flex-wrap justify-center flex-1 pt-14">
+              {comp.map((c, index) => {
+                return (
+                  <div className="h-12">
+                    <img
+                      className="object-contain mr-4"
+                      style={{
+                        maxWidth: '136px',
+                        minHeight: '50px',
+                        maxHeight: '50px',
+                      }}
+                      src={c.photo}
+                      alt="image"
+                    />
+                  </div>
+                );
+              })}
+              {/*  */}
+            </div>
+          </div>
+        </section>
+        {/* section 4 */}
+        <section className="section_two">
+          <div className="flex flex-col max-w-5xl m-auto">
+            <h1 className="sm:text-5xl text-4xl leading-normal mb-7 mt-24 ">
+              Reach your own{' '}
               <span
                 className=" px-3 bg-red-100 rounded"
                 style={{ color: '#fd1015' }}
               >
-                life-changing
+                goals
               </span>{' '}
-              experience
             </h1>
-            <p className="text-xl leading-relaxed tracking-wide mb-11 text-gray-800">
-              During our 9-week (full-time) or 24-week (part-time) coding
-              bootcamp, learn the most in-demand skills with motivated students,
-              passionate teachers and a hands-on curriculum teaching you how to
-              build software and solve problems.
+            <p className="text-xl  leading-relaxed tracking-wide mb-11 text-gray-800">
+              Whether you want to communicate better with developers,
+              drastically change your career path or complete your education, a
+              coding bootcamp is probably the right choice.
             </p>
           </div>
         </section>
