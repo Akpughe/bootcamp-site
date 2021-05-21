@@ -92,15 +92,6 @@ const NavBar = () => {
               Apply Now
             </li>
           </ul>
-          {/* <button className="relative top-0 border border-transparent shadow-2xl font-bold text-xl text-red-500 px-6">
-            Apply Now
-          </button> */}
-          {/* <a
-            className="flex justify-center items-center py-3 px-9 rounded-md font-bold cursor-pointer bg-white text-red-500  shadow-2xl"
-            href=""
-          >
-            hello
-          </a> */}
         </div>
       </nav>
     </>
