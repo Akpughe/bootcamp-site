@@ -22,7 +22,9 @@ body {
   font-family: 'Circular Std Black';
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
   font-family: 'Circular Std Black';
 }
 
@@ -35,18 +37,23 @@ a {
   box-sizing: border-box;
 }
 
-.li::after{
+.li::after {
   content: url(../public/icons/carret_nan.svg);
   padding-left: 5px;
 }
 
-.section_one{
+.section_one {
   background-image: url('../public/icons/clouds.svg');
   background-size: contain;
   background-position: center;
   min-height: 600px;
 }
 
-.section_two{
+.section_two {
   background-color: #fcf5e8;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  transition: ease-in-out;
 }
