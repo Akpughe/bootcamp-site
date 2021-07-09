@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 
 const NavBar = () => {
@@ -8,7 +9,14 @@ const NavBar = () => {
         <div className="flex sm:pl-0 pl-6 ">
           <div className="pt-4">
             {/* <h1 className="text-2xl">Bootcamp</h1> */}
-            <Image src="/vercel.svg" width={100} height={60} />
+            <Link href="/">
+              <Image
+                className=" cursor-pointer "
+                src="/vercel.svg"
+                width={100}
+                height={60}
+              />
+            </Link>
           </div>
           {/*  */}
           <div className="pl-6">
@@ -22,10 +30,12 @@ const NavBar = () => {
                       Web Development
                     </span>
                     <div className="hover:bg-yellow-100 opacity-80 px-4 -mt-4">
-                      <a className="text-sm  " href="">
-                        Web Development Full-time
-                        <span className="block text-xs -mt-2">12 weeks</span>
-                      </a>
+                      <Link href="/web-development-course/full-time">
+                        <a className="text-sm  " href="">
+                          Web Development Full-time
+                          <span className="block text-xs -mt-2">12 weeks</span>
+                        </a>
+                      </Link>
                     </div>
                     <div className="hover:bg-yellow-100 opacity-80 px-4">
                       <a className="text-sm  " href="">

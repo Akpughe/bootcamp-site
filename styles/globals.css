@@ -1,4 +1,5 @@
 @import url(//db.onlinewebfonts.com/c/f1a22f6f15d272c7aa56da8b2c91f5e5?family=Circular+Std+Black);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 @font-face {
   font-family: 'Circular Std Black';
   src: url('//db.onlinewebfonts.com/t/f1a22f6f15d272c7aa56da8b2c91f5e5.eot');
@@ -28,6 +29,10 @@ h3 {
   font-family: 'Circular Std Black';
 }
 
+p{
+  font-family: 'Poppins', sans-serif;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -49,6 +54,11 @@ a {
   min-height: 600px;
 }
 
+.section_onee{
+  min-height: 600px;
+
+}
+
 .section_two {
   background-color: #fcf5e8;
 }
@@ -56,4 +66,12 @@ a {
 .dropdown:hover .dropdown-content {
   display: block;
   transition: ease-in-out;
+}
+
+
+
+@media (max-width: 640px) {
+  .slick-track{
+   overflow: hidden;
+  }
 }
