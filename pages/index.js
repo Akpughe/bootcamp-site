@@ -159,7 +159,7 @@ export default function Home() {
 
       <Layout>
         <section className="section_one pt-24 ">
-          <div data-aos="fade-in" className="flex flex-wrap max-w-5xl m-auto">
+          <div className="flex flex-wrap max-w-5xl m-auto">
             {/*  */}
             <div className="flex-1  sm:pr-6 sm:pl-0 pl-8">
               <h1 className="text-6xl leading-normal mb-7 mt-12 ">

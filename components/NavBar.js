@@ -7,15 +7,16 @@ const NavBar = () => {
     <>
       <nav className="flex justify-between max-w-5xl  pt-8 m-auto">
         <div className="flex sm:pl-0 pl-6 ">
-          <div className="pt-4">
-            {/* <h1 className="text-2xl">Bootcamp</h1> */}
+          <div className="pt-7">
+            {/* <h1 className="text-3xl font-bold text-black">Bootcamp</h1> */}
             <Link href="/">
-              <Image
+              {/* <Image
                 className=" cursor-pointer "
                 src="/vercel.svg"
                 width={100}
                 height={60}
-              />
+              /> */}
+              <h1 className="text-3xl font-bold text-black">logo</h1>
             </Link>
           </div>
           {/*  */}
