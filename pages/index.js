@@ -226,7 +226,6 @@ export default function Home() {
             <div className="my-11 flex sm:flex-row flex-col flex-wrap sm:pr-0 sm:pl-0 pl-8 pr-8 ">
               {/* wed dev */}
               <div
-                data-aos="fade-right"
                 className="flex-1 bg-white pb-4 h-auto shadow-lg rounded-md mr-8 sm:mb-0 mb-4"
                 style={{ width: 'auto' }}
               >
@@ -280,7 +279,6 @@ export default function Home() {
               {/* end web dev */}
               {/* data science */}
               <div
-                data-aos="fade-left"
                 className="flex-1 bg-white pb-4 h-auto shadow-lg rounded-md mr-4"
                 style={{ width: 'auto' }}
               >
@@ -469,7 +467,7 @@ export default function Home() {
         </section>
         <section>
           <div className="flex sm:flex-row flex-col flex-wrap justify-between max-w-5xl m-auto pt-14">
-            <div data-aos="fade-up" className=" flex flex-col sm:w-1/2 w-full sm:border-r border-none sm:border-red-100 border-none mb-7 mt-12 sm:pr-8 pr-0 sm:pl-0 pl-8">
+            <div className=" flex flex-col sm:w-1/2 w-full sm:border-r border-none sm:border-red-100 border-none mb-7 mt-12 sm:pr-8 pr-0 sm:pl-0 pl-8">
               <h1 className="sm:text-4xl text-3xl sm:leading-normal leading-normal">
                 An{' '}
                 <span
@@ -499,7 +497,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div data-aos="fade-down" className="flex flex-col sm:w-1/2 w-full mb-7 sm:mt-12 mt-0 pl-8">
+            <div  className="flex flex-col sm:w-1/2 w-full mb-7 sm:mt-12 mt-0 pl-8">
               <p className="mb-9">
                 We strongly believe that there is a good way of building web
                 products. During our bootcamp, we teach you how successful
@@ -528,7 +526,7 @@ export default function Home() {
           </div>
         </section>
         <section className="section_two">
-          <div data-aos="flip-up" className="flex justify-center max-w-5xl m-auto">
+          <div className="flex justify-center max-w-5xl m-auto">
             <div className="flex mt-12 mb-12 ">
               <div
                 className="flex flex-col items-center justify-around justify-center w-full p-6 bg-white sm:px-20 px-0 "
