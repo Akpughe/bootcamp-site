@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 import Arrowleft from '../icons/Arrowleft';
 import Arrowright from '../icons/Arrowright';
 import Slider from 'react-slick';
-import Carousel from 'react-elastic-carousel';
+import AOS from 'aos';
 
 export default function Home() {
   const comp = [
@@ -104,6 +104,10 @@ export default function Home() {
     });
   }, []);
 
+  useEffect(() => {
+    AOS.init();
+  });
+
   const { nav1, nav2 } = state;
 
   const next = () => {
@@ -155,7 +159,7 @@ export default function Home() {
 
       <Layout>
         <section className="section_one pt-24 ">
-          <div className="flex flex-wrap max-w-5xl m-auto">
+          <div data-aos="fade-in" className="flex flex-wrap max-w-5xl m-auto">
             {/*  */}
             <div className="flex-1  sm:pr-6 sm:pl-0 pl-8">
               <h1 className="text-6xl leading-normal mb-7 mt-12 ">
@@ -222,6 +226,7 @@ export default function Home() {
             <div className="my-11 flex sm:flex-row flex-col flex-wrap sm:pr-0 sm:pl-0 pl-8 pr-8 ">
               {/* wed dev */}
               <div
+                data-aos="fade-right"
                 className="flex-1 bg-white pb-4 h-auto shadow-lg rounded-md mr-8 sm:mb-0 mb-4"
                 style={{ width: 'auto' }}
               >
@@ -275,6 +280,7 @@ export default function Home() {
               {/* end web dev */}
               {/* data science */}
               <div
+                data-aos="fade-left"
                 className="flex-1 bg-white pb-4 h-auto shadow-lg rounded-md mr-4"
                 style={{ width: 'auto' }}
               >
@@ -326,7 +332,7 @@ export default function Home() {
               </div>
               {/* end data science */}
             </div>
-            <div className="sm:pr-6 sm:pl-0 pl-8 pr-8">
+            <div data-aos="fade-in" className="sm:pr-6 sm:pl-0 pl-8 pr-8">
               <h1 className="sm:text-5xl text-4xl leading-normal mb-7 mt-12 ">
                 A{' '}
                 <span
@@ -409,7 +415,7 @@ export default function Home() {
             </p>
           </div>
           {/* slider */}
-          <div>
+          <div data-aos="zoom-out-down">
             <Slider
               className="w-full p-5"
               ref={(slider) => (slider1.current = slider)}
@@ -463,7 +469,7 @@ export default function Home() {
         </section>
         <section>
           <div className="flex sm:flex-row flex-col flex-wrap justify-between max-w-5xl m-auto pt-14">
-            <div className=" flex flex-col sm:w-1/2 w-full sm:border-r border-none sm:border-red-100 border-none mb-7 mt-12 sm:pr-8 pr-0 sm:pl-0 pl-8">
+            <div data-aos="fade-up" className=" flex flex-col sm:w-1/2 w-full sm:border-r border-none sm:border-red-100 border-none mb-7 mt-12 sm:pr-8 pr-0 sm:pl-0 pl-8">
               <h1 className="sm:text-4xl text-3xl sm:leading-normal leading-normal">
                 An{' '}
                 <span
@@ -493,7 +499,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col sm:w-1/2 w-full mb-7 sm:mt-12 mt-0 pl-8">
+            <div data-aos="fade-down" className="flex flex-col sm:w-1/2 w-full mb-7 sm:mt-12 mt-0 pl-8">
               <p className="mb-9">
                 We strongly believe that there is a good way of building web
                 products. During our bootcamp, we teach you how successful
@@ -522,7 +528,7 @@ export default function Home() {
           </div>
         </section>
         <section className="section_two">
-          <div className="flex justify-center max-w-5xl m-auto">
+          <div data-aos="flip-up" className="flex justify-center max-w-5xl m-auto">
             <div className="flex mt-12 mb-12 ">
               <div
                 className="flex flex-col items-center justify-around justify-center w-full p-6 bg-white sm:px-20 px-0 "
